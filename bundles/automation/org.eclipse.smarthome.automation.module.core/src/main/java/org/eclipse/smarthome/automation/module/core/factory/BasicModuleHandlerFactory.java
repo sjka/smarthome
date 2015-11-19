@@ -174,9 +174,8 @@ public class BasicModuleHandlerFactory extends BaseModuleHandlerFactory {
     /*
      * (non-Javadoc)
      *
-     * @see
-     * org.eclipse.smarthome.automation.handler.BaseCustomizedModuleHandlerFactory#dispose
-     * ()
+     * @see org.eclipse.smarthome.automation.handler.
+     * BaseCustomizedModuleHandlerFactory#dispose ()
      */
     @Override
     public void dispose() {
@@ -231,8 +230,8 @@ public class BasicModuleHandlerFactory extends BaseModuleHandlerFactory {
             CompareConditionHandler compareConditionHandler = handler != null
                     && handler instanceof CompareConditionHandler ? (CompareConditionHandler) handler : null;
             if (compareConditionHandler == null) {
-                compareConditionHandler = new CompareConditionHandler((Condition)module);
-                handlers.put(ruleUID+module.getId(), compareConditionHandler);
+                compareConditionHandler = new CompareConditionHandler((Condition) module);
+                handlers.put(ruleUID + module.getId(), compareConditionHandler);
             }
             return compareConditionHandler;
         } else {
@@ -240,5 +239,4 @@ public class BasicModuleHandlerFactory extends BaseModuleHandlerFactory {
         }
         return null;
     }
-
 }
