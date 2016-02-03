@@ -279,9 +279,9 @@ class ManagedItemProviderOSGiTest extends OSGiTest {
         try {
             assertThat itemProvider.getAll().size(), is(2)
             assertThat itemRegistry.getItems().size(), is(2)
-            Item item1 = itemProvider.get("SomeStrangeItem")
-            GroupItem item2 = itemProvider.get("SomeGroupItem")
-            assertThat itemProvider.get("SomeStrangeItem"), is(notNullValue())
+            Item item1 = itemRegistry.get("SomeStrangeItem")
+            GroupItem item2 = itemRegistry.get("SomeGroupItem")
+            assertThat itemRegistry.get("SomeStrangeItem"), is(notNullValue())
             assertThat item1, is(notNullValue())
             assertThat item1.getGroupNames().size(), is(1)
             assertThat item2.getMembers().size(), is(1)
