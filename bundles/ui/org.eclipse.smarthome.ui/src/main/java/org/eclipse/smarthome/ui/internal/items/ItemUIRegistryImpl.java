@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.smarthome.core.common.registry.RegistryChangeListener;
 import org.eclipse.smarthome.core.items.GenericItem;
 import org.eclipse.smarthome.core.items.GroupItem;
@@ -536,13 +537,22 @@ public class ItemUIRegistryImpl implements ItemUIRegistry {
                 if (item != null) {
                     Widget defaultWidget = getDefaultWidget(item.getClass(), item.getName());
                     if (defaultWidget != null) {
-                        defaultWidget.setItem(item.getName());
+                        copyProperties(widget, defaultWidget);
                         return defaultWidget;
                     }
                 }
             }
             return null;
         }
+    }
+
+    private void copyProperties(Widget source, Widget target) {
+        target.setItem(source.getItem());
+        target.setIcon(source.getIcon());
+        target.setLabel(source.getLabel());
+        target.getVisibility().addAll(EcoreUtil.copyAll(source.getVisibility()));
+        target.getLabelColor().addAll(EcoreUtil.copyAll(source.getLabelColor()));
+        target.getValueColor().addAll(EcoreUtil.copyAll(source.getValueColor()));
     }
 
     /**
