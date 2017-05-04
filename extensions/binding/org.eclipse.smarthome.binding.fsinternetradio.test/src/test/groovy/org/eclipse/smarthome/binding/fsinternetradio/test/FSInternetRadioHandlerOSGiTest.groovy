@@ -166,8 +166,7 @@ public class FSInternetRadioHandlerOSGiTest extends OSGiTest{
     }
 
     @Test
-    void 'verify OFFLINE Thing-status and NULL Item-state when the HTTP response cannot be parsed correctly'() {
-
+    void 'verify OFFLINE Thing-status when the HTTP response cannot be parsed correctly'() {
         // create a thing with two channels - the power channel and any of the others
         String modeChannelID = FSInternetRadioBindingConstants.CHANNEL_MODE
         String acceptedItemType = acceptedItemTypes.get(modeChannelID)
@@ -195,9 +194,6 @@ public class FSInternetRadioHandlerOSGiTest extends OSGiTest{
 
             assertThat ("The ThingStatus was not updated correctly when the HTTP response cannot be parsed",radioThing.getStatus(), is(equalTo(ThingStatus.OFFLINE)))
             assertThat ("The ThingStatusInfo was not updated correctly when the HTTP response cannot be parsed", radioThing.getStatusInfo().getStatusDetail(), is(equalTo(ThingStatusDetail.COMMUNICATION_ERROR)))
-        }
-        waitForAssert {
-            assertThat ("The item's state was not updated correctly when the HTTP response cannot be parsed", modeTestItem.getState(), is (UnDefType.NULL))
         }
     }
 
