@@ -91,6 +91,20 @@ public interface ThingHandler {
     void handleCommand(ChannelUID channelUID, Command command);
 
     /**
+     * Handles a command for a given channel.
+     * <p>
+     * This method is only called, if the thing has been initialized (status ONLINE/OFFLINE).
+     * <p>
+     *
+     * @param channelUID the {@link ChannelUID} of the channel to which the command was sent
+     * @param command the {@link Command}
+     * @param source identifier of the source
+     */
+    default void handleCommand(ChannelUID channelUID, Command command, String source) {
+        handleCommand(channelUID, command);
+    }
+
+    /**
      * Handles a {@link State} update for a given channel.
      * <p>
      * This method is only called, if the thing has been initialized (status ONLINE/OFFLINE).
@@ -100,6 +114,20 @@ public interface ThingHandler {
      * @param newState the new {@link State}
      */
     void handleUpdate(ChannelUID channelUID, State newState);
+
+    /**
+     * Handles a {@link State} update for a given channel.
+     * <p>
+     * This method is only called, if the thing has been initialized (status ONLINE/OFFLINE).
+     * <p>
+     *
+     * @param channelUID the {@link ChannelUID} of the channel on which the update was performed
+     * @param newState the new {@link State}
+     * @param source identifier of the source
+     */
+    default void handleUpdate(ChannelUID channelUID, State newState, String source) {
+        handleUpdate(channelUID, newState);
+    }
 
     /**
      * Handles a configuration update.

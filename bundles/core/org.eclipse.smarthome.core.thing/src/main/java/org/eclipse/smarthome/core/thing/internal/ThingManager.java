@@ -363,7 +363,7 @@ public class ThingManager extends AbstractItemEventSubscriber implements ThingTr
                                 SafeMethodCaller.call(new SafeMethodCaller.ActionWithException<Void>() {
                                     @Override
                                     public Void call() throws Exception {
-                                        handler.handleCommand(channelUID, command);
+                                        handler.handleCommand(channelUID, command, commandEvent.getSource());
                                         return null;
                                     }
                                 });
@@ -413,7 +413,7 @@ public class ThingManager extends AbstractItemEventSubscriber implements ThingTr
                                 SafeMethodCaller.call(new SafeMethodCaller.ActionWithException<Void>() {
                                     @Override
                                     public Void call() throws Exception {
-                                        handler.handleUpdate(channelUID, newState);
+                                        handler.handleUpdate(channelUID, newState, updateEvent.getSource());
                                         return null;
                                     }
                                 });
