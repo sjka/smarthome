@@ -14,7 +14,7 @@ package org.eclipse.smarthome.binding.mqttgeneric.handler;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.*;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 import javax.naming.ConfigurationException;
@@ -72,7 +72,7 @@ public class MqttBrokerConnectionHandlerTest {
         when(brokerConnection.getName()).thenReturn("something");
         handler.brokerAdded(brokerConnection);
         assertNull(handler.getConnection());
-        verify(callback, times(0)).statusUpdated(anyObject(), anyObject());
+        verify(callback, times(0)).statusUpdated(any(), any());
     }
 
     @Test
