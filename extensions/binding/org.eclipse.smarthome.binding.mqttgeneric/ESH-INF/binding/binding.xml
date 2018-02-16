@@ -3,6 +3,6 @@
 	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/binding/v1.0.0 http://eclipse.org/smarthome/schemas/binding-1.0.0.xsd">
 
 	<name>MqttGeneric Things Binding</name>
-	<description>Configure Mqtt things</description>
+	<description>Connect Mqtt topics to things. This binding depends on the Mqtt Broker Binding for Mqtt connections.</description>
 	<author>David Graeff</author>
 </binding:binding>
