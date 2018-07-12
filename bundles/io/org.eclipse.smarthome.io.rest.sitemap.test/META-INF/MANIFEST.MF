@@ -11,7 +11,7 @@ Import-Package:
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.core.library.types,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.collection,
  org.hamcrest.core,
  org.junit;version="4.0.0",

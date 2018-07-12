@@ -17,7 +17,7 @@ Import-Package:
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.core.binding,
  org.eclipse.smarthome.test,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit;version="4.0.0",
  org.osgi.service.cm
 Automatic-Module-Name: org.eclipse.smarthome.core.binding.xml.test

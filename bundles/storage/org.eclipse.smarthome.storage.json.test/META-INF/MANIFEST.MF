@@ -14,7 +14,7 @@ Import-Package:
  org.eclipse.smarthome.core.library.items,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit.matchers;version="4.0.0",
  org.junit;version="4.0.0"
 Automatic-Module-Name: org.eclipse.smarthome.storage.json.test

@@ -15,7 +15,7 @@ Import-Package:
  org.eclipse.smarthome.core.types,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.collection,
  org.hamcrest.core,
  org.hamcrest.number,

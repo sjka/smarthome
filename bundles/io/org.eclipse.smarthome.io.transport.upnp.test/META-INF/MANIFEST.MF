@@ -16,7 +16,7 @@ Import-Package:
  org.eclipse.smarthome.core.types,
  org.eclipse.smarthome.test.java,
  org.glassfish.jersey.uri.internal,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit;version="4.0.0",
  org.mockito,
  org.mockito.stubbing

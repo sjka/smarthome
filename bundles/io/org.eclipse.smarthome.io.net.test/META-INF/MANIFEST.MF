@@ -10,7 +10,7 @@ Import-Package:
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.core,
  org.junit;version="4.0.0",
  org.junit.rules,

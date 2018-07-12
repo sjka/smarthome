@@ -22,6 +22,6 @@ Import-Package:
  org.eclipse.smarthome.core.thing.binding.builder,
  org.eclipse.smarthome.core.types,
  org.eclipse.smarthome.test,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit;version="4.0.0"
 Automatic-Module-Name: org.eclipse.smarthome.io.rest.sse.test

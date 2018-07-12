@@ -24,7 +24,7 @@ Import-Package:
  org.eclipse.smarthome.core.thing.link,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.storage,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit,
  org.junit.runner,
  org.junit.runners,

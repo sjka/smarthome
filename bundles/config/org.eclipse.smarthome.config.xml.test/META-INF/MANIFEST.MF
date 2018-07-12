@@ -16,7 +16,7 @@ Import-Package:
  org.codehaus.groovy.runtime.typehandling,
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.test,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit;version="4.0.0",
  org.osgi.service.component
 Automatic-Module-Name: org.eclipse.smarthome.config.xml.test

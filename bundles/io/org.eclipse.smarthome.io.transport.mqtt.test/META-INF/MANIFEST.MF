@@ -13,7 +13,7 @@ Import-Package:
  org.eclipse.smarthome.io.transport.mqtt,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.collection,
  org.hamcrest.core,
  org.junit,

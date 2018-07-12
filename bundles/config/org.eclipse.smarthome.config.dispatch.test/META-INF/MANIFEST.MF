@@ -9,7 +9,7 @@ Fragment-Host: org.eclipse.smarthome.config.dispatch
 Import-Package: 
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit,
  org.junit.rules,
  org.mockito,

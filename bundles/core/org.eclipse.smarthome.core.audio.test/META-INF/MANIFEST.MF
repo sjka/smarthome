@@ -21,7 +21,7 @@ Import-Package:
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.io.console,
  org.eclipse.smarthome.io.console.extensions,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit,
  org.osgi.framework
 Automatic-Module-Name: org.eclipse.smarthome.core.audio.test

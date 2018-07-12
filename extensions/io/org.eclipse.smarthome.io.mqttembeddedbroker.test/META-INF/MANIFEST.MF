@@ -9,7 +9,7 @@ Fragment-Host: org.eclipse.smarthome.io.mqttembeddedbroker
 Import-Package: org.eclipse.smarthome.core.common.registry,
  org.eclipse.smarthome.core.events,
  org.eclipse.smarthome.test,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.collection,
  org.hamcrest.core,
  org.junit,

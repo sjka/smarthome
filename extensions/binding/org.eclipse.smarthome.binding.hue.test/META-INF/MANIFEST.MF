@@ -24,7 +24,7 @@ Import-Package:
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
  org.eclipse.smarthome.test.storage,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.junit;version="4.0.0",
  org.jupnp.model,
  org.jupnp.model.types,

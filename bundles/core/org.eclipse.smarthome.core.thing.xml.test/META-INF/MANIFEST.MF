@@ -11,7 +11,7 @@ Import-Package: org.apache.commons.io,
  org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.test,
  org.eclipse.smarthome.test.java,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.collection,
  org.junit;version="4.0.0",
  org.osgi.service.component

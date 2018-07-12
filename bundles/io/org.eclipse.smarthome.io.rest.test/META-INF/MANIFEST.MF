@@ -22,7 +22,7 @@ Import-Package:
  org.eclipse.smarthome.core.types,
  org.eclipse.smarthome.test,
  org.glassfish.jersey.uri.internal,
- org.hamcrest;core=split,
+ org.hamcrest,
  org.hamcrest.core,
  org.hamcrest.object,
  org.junit;version="4.0.0",
